@@ -1,10 +1,8 @@
 package com.soft1841.controller;
 
 import com.soft1841.dao.GoodsDAO;
-import com.soft1841.dao.TypeDAO;
 import com.soft1841.entity.Goods;
 import com.soft1841.entity.Type;
-import com.soft1841.utils.DAOFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

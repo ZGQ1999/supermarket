@@ -1,8 +1,6 @@
 package com.soft1841.controller;
 
-import com.soft1841.dao.CashierDAO;
 import com.soft1841.entity.Cashier;
-import com.soft1841.utils.DAOFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

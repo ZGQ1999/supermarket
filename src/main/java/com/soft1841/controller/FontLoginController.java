@@ -1,6 +1,4 @@
 package com.soft1841.controller;
-import com.soft1841.service.CashierService;
-import com.soft1841.utils.ServiceFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.controller.CashiersController">
+    <HBox alignment="BOTTOM_CENTER" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" spacing="10">
+        <Button styleClass="btn-basic,btn-radius-large,green-theme" text="添加收银员" onAction="#insertCashier"/>
+        <TextField maxWidth="140" maxHeight="40" promptText="请输入关键词" fx:id="keywordsField" styleClass="blue-theme"/>
+        <Button styleClass="btn-basic,btn-radius-normal,blue-theme" text="搜索" />
+    </HBox>
+    <FlowPane fx:id="cashierPane" hgap="30" vgap="10"
+              AnchorPane.topAnchor="100"
+              AnchorPane.leftAnchor="20"
+              AnchorPane.rightAnchor="20"/>
+</AnchorPane>
