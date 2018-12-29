@@ -2,6 +2,8 @@ package com.soft1841.service.impl;
 
 import com.soft1841.dao.CashierDAO;
 import com.soft1841.entity.Cashier;
+import com.soft1841.service.CashierService;
+import com.soft1841.utils.DAOFactory;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

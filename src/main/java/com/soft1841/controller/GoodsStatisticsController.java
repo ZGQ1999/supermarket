@@ -2,6 +2,7 @@ package com.soft1841.controller;
 import com.soft1841.entity.Type;
 import com.soft1841.service.GoodsService;
 import com.soft1841.service.TypeService;
+import com.soft1841.utils.ServiceFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

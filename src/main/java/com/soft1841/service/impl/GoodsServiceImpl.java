@@ -3,6 +3,7 @@ package com.soft1841.service.impl;
 import com.soft1841.dao.GoodsDAO;
 import com.soft1841.entity.Goods;
 import com.soft1841.service.GoodsService;
+import com.soft1841.utils.DAOFactory;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 
 public class GoodsServiceImpl implements GoodsService {
-    private GoodsDAO goodsDAO =DAOFactory.getGoodsDAOInstance();
+    private GoodsDAO goodsDAO = DAOFactory.getGoodsDAOInstance();
     @Override
     public Long addGoods(Goods goods) {
         long result = 0;

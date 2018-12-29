@@ -2,6 +2,7 @@ package com.soft1841.service.impl;
 import com.soft1841.dao.TypeDAO;
 import com.soft1841.entity.Type;
 import com.soft1841.service.TypeService;
+import com.soft1841.utils.DAOFactory;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

@@ -1,5 +1,6 @@
 package com.soft1841.utils;
 
+import com.soft1841.service.CashierService;
 import com.soft1841.service.GoodsService;
 import com.soft1841.service.TypeService;
 import com.soft1841.service.VIPService;

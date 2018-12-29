@@ -13,9 +13,6 @@ public class DAOFactory {
     public static GoodsDAO getGoodsDAOInstance () {
         return new GoodsDAOImpl();
     }
-    public static DetailDAO getDetailDAOInstance () {
-        return new DetailDAOImpl();
-    }
     public static VIPDAO getVIPDAOInstance () {
         return new VIPDAOImpl();
     }

@@ -3,6 +3,7 @@ package com.soft1841.service.impl;
 import com.soft1841.dao.VIPDAO;
 import com.soft1841.entity.VIP;
 import com.soft1841.service.VIPService;
+import com.soft1841.utils.DAOFactory;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
