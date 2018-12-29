@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.controller.AddGoodsController"
+            prefHeight="400.0" prefWidth="600.0">
+    <HBox AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+          minHeight="50" alignment="CENTER" styleClass="green-theme">
+        <Label text="新增商品信息" styleClass="font-title,green-theme,font-white"/>
+    </HBox>
+    <VBox styleClass="default-theme" spacing="20" minHeight="400"
+          AnchorPane.topAnchor="55" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <ComboBox promptText="选择类别" fx:id="goodsType" prefWidth="120" />
+        <TextField promptText="商品名" fx:id="goodsName"/>
+        <HBox spacing="10">
+            <TextField promptText="价格" fx:id="goodsPrice" prefWidth="290"/>
+        </HBox>
+        <TextField promptText="封面图" fx:id="goodsPicture"/>
+        <TextArea promptText="商品描述" fx:id="goodsDiscription" prefHeight="140"/>
+        <padding>
+            <Insets top="10" left="50" bottom="10" right="50"/>
+        </padding>
+    </VBox>
+    <Button text="确认" onAction="#addGoods" styleClass="btn-radius-large,green-theme"
+            AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="180" AnchorPane.rightAnchor="180"/>
+</AnchorPane>

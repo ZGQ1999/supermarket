@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<!--前台主界面布局-->
+<!--@author 岳凡-->
+<!--2018.12.25-->
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.controller.FontMainController">
+    <ImageView AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0">
+        <Image url="/img/fontMain.png"/>
+    </ImageView>
+    <Label text="智行超市前台管理" styleClass="btnMenutext" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="50" />
+    <Button text="前台收银" styleClass="blue-large-button" onAction="#showReceiptsStage"
+            AnchorPane.leftAnchor="175" AnchorPane.topAnchor="200"/>
+    <Button text="会员注册" styleClass="blue-large-button" onAction="#vipRegistrationStage"
+            AnchorPane.leftAnchor="495" AnchorPane.topAnchor="200"/>
+    <Button text="账单查询" styleClass="blue-large-button" onAction="#billSelectStage"
+            AnchorPane.leftAnchor="175" AnchorPane.topAnchor="350"/>
+    <Button text="个人中心" styleClass="blue-large-button" onAction="#personalStage"
+            AnchorPane.leftAnchor="495" AnchorPane.topAnchor="350"/>
+    <HBox AnchorPane.rightAnchor="200" AnchorPane.topAnchor="100">
+        <ImageView>
+            <Image url="/img/logo.png"/>
+        </ImageView>
+        <Label text="xi" styleClass="black-word"/>
+    </HBox>
+    <Button text="退出" styleClass="blue-button-return"
+            AnchorPane.bottomAnchor="120" AnchorPane.rightAnchor="200"/>
+</AnchorPane>

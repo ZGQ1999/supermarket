@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.controller.returnController"
+            prefHeight="400.0" prefWidth="600.0" >
+<VBox spacing="15">
+        <Label   text="退款原因"  style="-fx-font-size: 28px" AnchorPane.leftAnchor="30" AnchorPane.topAnchor="20"/>
+        <TextField prefWidth="650" prefHeight="50"  AnchorPane.leftAnchor="100" AnchorPane.topAnchor="70"/>
+        <Label   text="退款货物"  style="-fx-font-size: 28px" AnchorPane.leftAnchor="30" AnchorPane.topAnchor="170"/>
+        <TextField prefWidth="650" prefHeight="50" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="250"/>
+
+        <Label   text="退款金额"  style="-fx-font-size: 28px" AnchorPane.leftAnchor="30" AnchorPane.topAnchor="370"/>
+        <TextField prefWidth="650" prefHeight="50" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="450"/>
+        <Label   text="输入/扫描小票ID"  style="-fx-font-size: 28px" AnchorPane.leftAnchor="30" AnchorPane.topAnchor="570"/>
+        <TextField prefWidth="650" prefHeight="50" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="650"/>
+        <Label text="总计:"  style="-fx-font-size: 28px " AnchorPane.leftAnchor="70" AnchorPane.topAnchor="740"/>
+     <TextField prefWidth="650" prefHeight="50"/>
+</VBox>
+        <Button AnchorPane.topAnchor="650"  AnchorPane.leftAnchor="100" text="确定"
+                style="-fx-font-size:26px " prefWidth="300" prefHeight="80" styleClass="orange-button"/>
+
+<TableView AnchorPane.leftAnchor="750" prefWidth="800" prefHeight="790">
+    <columns>
+        <TableColumn prefWidth="200.0" text="商品名称">
+            <cellValueFactory>
+                <PropertyValueFactory property="id"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="200.0" text="商品单价">
+            <cellValueFactory>
+                <PropertyValueFactory property="id"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="200.0" text="退货数量">
+            <cellValueFactory>
+                <PropertyValueFactory property="id"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="200.0" text="商品库存">
+            <cellValueFactory>
+                <PropertyValueFactory property="id"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</TableView>
+</AnchorPane>

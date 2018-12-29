@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<!--前台登录界面-->
+<!--@author 岳凡-->
+<!--2018.12.26-->
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.controller.VIPController">
+    <HBox alignment="CENTER" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10" spacing="10">
+        <TextField promptText="请输入关键词" fx:id="keywordsField" />
+        <Button text="搜索" />
+    </HBox>
+    <TableView fx:id="vipTable" prefWidth="1000"
+               AnchorPane.topAnchor="110" AnchorPane.leftAnchor="10">
+        <columns>
+            <TableColumn text="会员ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="账号">
+                <cellValueFactory>
+                    <PropertyValueFactory property="number"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="用户名">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="地址">
+                <cellValueFactory>
+                    <PropertyValueFactory property="place"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="电话">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phonenumber"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="积分">
+                <cellValueFactory>
+                    <PropertyValueFactory property="integral"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+</AnchorPane>

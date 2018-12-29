@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.controller.ReceiptsController">
+    <top>
+        <AnchorPane prefHeight="150" styleClass="blue-background">
+            <Label text="前台零售" styleClass="blue-title" AnchorPane.topAnchor="80" AnchorPane.leftAnchor="20"/>
+            <Button text="搜索" styleClass="search-button"
+                    AnchorPane.topAnchor="100" AnchorPane.rightAnchor="170"/>
+            <TextField text="搜索商品" styleClass="text-field-large-radius"
+                       AnchorPane.topAnchor="100" AnchorPane.rightAnchor="220"/>
+            <Button text="返回" styleClass="blue-button-return"
+                    AnchorPane.topAnchor="100" AnchorPane.rightAnchor="50"/>
+        </AnchorPane>
+    </top>
+    <center>
+        <TableView minHeight="320">
+            <columns>
+                <TableColumn text="商品ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="商品名称">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="单价">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="price"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="数量">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="number"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <AnchorPane minHeight="120"  styleClass="blue-background">
+            <HBox AnchorPane.leftAnchor="10" AnchorPane.topAnchor="30" spacing="10">
+                <Label text="输入/扫描编号：" styleClass="black-word" />
+                <TextField text="" styleClass="text-field-small-radius"/>
+            </HBox>
+            <Button text="删除所选商品" styleClass="orange-button" AnchorPane.topAnchor="80" AnchorPane.leftAnchor="150"/>
+            <HBox AnchorPane.leftAnchor="550" AnchorPane.topAnchor="40">
+                <Label text="总计：￥" styleClass="zongji-word" alignment="CENTER"/>
+                <TextField text="" styleClass="zongji-textfield-word,text-field-small-radius" />
+            </HBox>
+            <HBox AnchorPane.topAnchor="40" AnchorPane.rightAnchor="150" spacing="10">
+                <Label text="实收:" styleClass="black-word"/>
+                <TextField text="" styleClass="text-field-small-radius"/>
+            </HBox>
+            <HBox AnchorPane.topAnchor="80" AnchorPane.rightAnchor="150" spacing="10">
+                <Label text="找零:" styleClass="black-word"/>
+                <TextField text="" styleClass="text-field-small-radius"/>
+            </HBox>
+            <Button text="结算打印" styleClass="print-button"
+                    AnchorPane.rightAnchor="30" AnchorPane.topAnchor="30"/>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

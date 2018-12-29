@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<!--前台登录界面-->
+<!--@author 田震-->
+<!--2018.12.25-->
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.controller.BackMainController">
+    <top>
+        <AnchorPane prefHeight="180" styleClass="blue-background">
+            <Label text="智行超市后台管理" styleClass="blue-title"
+                   AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="5"/>
+        </AnchorPane>
+    </top>
+    <center>
+        <SplitPane styleClass="blue-background">
+            <AnchorPane maxWidth="200" minWidth="200">
+                <Accordion>
+                    <panes>
+                        <TitledPane alignment="CENTER" text="库存管理">
+                            <VBox prefWidth="200" spacing="5" styleClass="blue-background">
+                                <Button text="前台订单" styleClass="blue-button-shout" onAction="#frontDesk"/>
+                                <Button text="商品管理" styleClass="blue-button-shout" onAction="#ListGoods"/>
+                                <Button text="商品类管理" styleClass="blue-button-shout" onAction="#ListType"/>
+                            </VBox>
+                        </TitledPane>
+
+                        <TitledPane alignment="CENTER" text="售后管理" >
+                            <VBox prefWidth="200" spacing="5" styleClass="blue-background">
+                                <Button text="退货管理" styleClass="blue-button-shout" onMouseClicked="#returnGoods"/>
+                                <Button text="换货管理" styleClass="blue-button-shout" onAction="#changeGoods"/>
+                            </VBox>
+                        </TitledPane>
+
+                        <TitledPane text="人员管理" alignment="CENTER">
+                            <VBox prefWidth="200" spacing="5" styleClass="blue-background">
+                                <Button text="收营员管理"  styleClass="blue-button-shout" onAction="#ListCashier"/>
+                                <Button text="会员管理" styleClass="blue-button-shout" onAction="#ListVIP"/>
+                            </VBox>
+                        </TitledPane>
+
+                        <TitledPane text="数据统计" alignment="CENTER">
+                            <VBox prefWidth="200" spacing="5" styleClass="blue-background">
+                                <Button text="销售商品统计" styleClass="blue-button-shout" onAction="#goodsStatistics"/>
+                                <Button text="营业额统计" styleClass="blue-button-shout" onAction="#turnover"/>
+                                <Button text="员工效益统计" styleClass="blue-button-shout" onAction="#employeeEffectiveness"/>
+                            </VBox>
+                        </TitledPane>
+                    </panes>
+                </Accordion>
+            </AnchorPane>
+
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
+                <StackPane fx:id="backMainContainer" minWidth="1060">
+                    <!--加载外部的fxml文件，显示默认的主体内容-->
+                    <fx:include source="turnover.fxml"/>
+                    <padding>
+                        <Insets top="10" left="30" bottom="5" right="10"/>
+                    </padding>
+                </StackPane>
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+            </ScrollPane>
+        </SplitPane>
+    </center>
+</BorderPane>
+
