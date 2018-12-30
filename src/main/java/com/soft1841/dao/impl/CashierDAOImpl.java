@@ -6,11 +6,6 @@ import com.soft1841.entity.Cashier;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * @tianzhen
- * 2018.12.24
- */
 public class CashierDAOImpl implements CashierDAO {
     @Override
     public Cashier getCashierByNumber(String number) throws SQLException {

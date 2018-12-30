@@ -9,11 +9,6 @@ import com.soft1841.entity.Goods;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * @author  田震
- * 2018/12/26
- */
 public class GoodsDAOImpl implements GoodsDAO {
     @Override
     public Long insertGoods(Goods goods) throws SQLException {

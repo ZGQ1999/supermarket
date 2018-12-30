@@ -9,13 +9,6 @@ import com.soft1841.entity.VIP;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * 实现VIP的接口
- * @author 岳凡
- * 2018.12.26
- */
-
 public class VIPDAOImpl implements VIPDAO {
     @Override
     public Long insertVIP(VIP vip) throws SQLException {

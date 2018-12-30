@@ -11,7 +11,6 @@ import java.util.List;
 
 /**
  * VUPService的实现类
- * @author 岳凡
  * 2018.12.27
  */
 

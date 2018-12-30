@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @周国庆
  * 2018.12.24
  */
 public class CashierServiceImpl  implements CashierService {

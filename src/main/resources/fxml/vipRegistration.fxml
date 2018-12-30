@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <!--前台登录界面-->
-<!--@author 岳凡-->
 <!--2018.12.26-->
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"

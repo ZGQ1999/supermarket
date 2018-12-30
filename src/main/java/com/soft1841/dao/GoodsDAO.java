@@ -6,12 +6,6 @@ import com.soft1841.entity.Goods;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * 商品DAO
- * @author 田震
- * 2018.12.26
- */
-
 public interface GoodsDAO {
     /**
      * 新增商品，返回自增主键

@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * 商品业务逻辑接口
- * @author 田震
  */
 
 public interface GoodsService  {

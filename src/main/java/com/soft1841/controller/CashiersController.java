@@ -22,10 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
-/**
- * 2018/12/28
- * @author 田震
- */
 public class CashiersController implements Initializable {
     @FXML
     private FlowPane cashierPane;

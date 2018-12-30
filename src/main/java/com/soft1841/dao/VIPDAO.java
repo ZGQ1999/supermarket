@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * 会员接口
- * @author 岳凡
  * 2018.12.26
  */
 

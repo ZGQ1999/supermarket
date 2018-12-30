@@ -11,7 +11,6 @@ import java.util.List;
 
 /**
  * 商品Service的实现类
- * @author 田震
  */
 
 public class GoodsServiceImpl implements GoodsService {

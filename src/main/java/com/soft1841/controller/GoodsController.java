@@ -27,12 +27,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-/**
- * 商品信息管理界面
- * @author 田震
- * 2018-12-26
- */
-
 public class GoodsController implements Initializable {
     //布局文件中的表格视图对象，用来显示数据库中读取的所有商品信息
     @FXML

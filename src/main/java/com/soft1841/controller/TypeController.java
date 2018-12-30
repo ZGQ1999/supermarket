@@ -1,4 +1,5 @@
 package com.soft1841.controller;
+
 import com.soft1841.entity.Type;
 import com.soft1841.service.TypeService;
 import com.soft1841.utils.ComponentUtil;
@@ -9,10 +10,12 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+
 import java.net.URL;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
+
 public class TypeController implements Initializable {
     //获得布局文件中的表格对象
     @FXML
@@ -20,18 +23,20 @@ public class TypeController implements Initializable {
     //定义ObservableList数据集合
     private ObservableList<Type> typeData = FXCollections.observableArrayList();
     //通过工厂类获得Service的实例
-    private TypeService typeService  = ServiceFactory.getTypeServiceInstance();
+    private TypeService typeService = ServiceFactory.getTypeServiceInstance();
     //定义实体集合，用来存放数据库查询结果
     private List<Type> typeList;
     private TableColumn<Type, Type> delCol = new TableColumn<>("备注");
+
     @Override
-    public void initialize (URL location, ResourceBundle resources) {
+    public void initialize(URL location, ResourceBundle resources) {
         //水平方向不显示滚动条
         typeTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 //在表格最后加入删除按钮
         delCol.setCellValueFactory(param -> new ReadOnlyObjectWrapper<>(param.getValue()));
         delCol.setCellFactory(param -> new TableCell<Type, Type>() {
             private final Button deleteButton = ComponentUtil.getButton("删除", "warning-theme");
+
             @Override
             protected void updateItem(Type type, boolean empty) {
                 super.updateItem(type, empty);

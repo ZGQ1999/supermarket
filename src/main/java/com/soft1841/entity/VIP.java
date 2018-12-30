@@ -2,7 +2,6 @@ package com.soft1841.entity;
 
 /**
  * VIP类
- * @author 岳凡
  * 2018.12.26
  */
 

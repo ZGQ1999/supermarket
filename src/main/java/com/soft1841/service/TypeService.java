@@ -6,7 +6,6 @@ import com.soft1841.entity.Type;
 import java.util.List;
 
 /**
- * @author 田震
  * 2018.12.25
  */
 public interface TypeService {

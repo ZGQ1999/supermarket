@@ -4,11 +4,6 @@ import com.soft1841.entity.Cashier;
 
 import java.sql.SQLException;
 import java.util.List;
-/**
- * @田震
- * 2018.12.26
- * 收营员DAO接口
- */
 public interface CashierDAO {
     /**
      * 根据工号查询收银员
