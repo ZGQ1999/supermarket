@@ -10,9 +10,9 @@
             fx:controller="com.soft1841.controller.FontLoginController"
            >
     <ImageView  fitWidth="2000" fitHeight="1500" >
-        <Image url="/img/chaoshi.jpg"  />
+        <Image url="/img/bei.jpg"  />
     </ImageView>
-    <Label text="智行超市管理系统前台" styleClass="blue-title" AnchorPane.topAnchor="150" AnchorPane.rightAnchor="5"/>
+    <Label text="智行超市管理系统前台" styleClass="blue-title" AnchorPane.topAnchor="150" AnchorPane.leftAnchor="220" AnchorPane.rightAnchor="220"/>
     <VBox prefWidth="330" AnchorPane.topAnchor="270" AnchorPane.leftAnchor="230" spacing="30">
         <TextField promptText="账号" focusTraversable="false" fx:id="accountField" styleClass="text-field-small-radius"/>
         <PasswordField promptText="密码" focusTraversable="false" fx:id="passwordField" styleClass="text-field-small-radius"/>

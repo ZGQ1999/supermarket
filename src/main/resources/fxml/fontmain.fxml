@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
 <!--前台主界面布局-->
 <!--2018.12.25-->
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.soft1841.controller.FontMainController">
-    <ImageView AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0">
-        <Image url="/img/fontMain.png"/>
+
+<AnchorPane prefHeight="301.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.controller.FontMainController">
+    <ImageView fitHeight="1259.0" fitWidth="2443.0" layoutX="-317.0" layoutY="-272.0" AnchorPane.bottomAnchor="-507.0" AnchorPane.leftAnchor="-317.0" AnchorPane.rightAnchor="-1551.0" AnchorPane.topAnchor="-272.0">
+        <Image url="/img/fontMain.png" />
     </ImageView>
-    <Label text="智行超市前台管理" styleClass="btnMenutext" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="50" />
-    <Button text="前台收银" styleClass="blue-large-button" onAction="#showReceiptsStage"
-            AnchorPane.leftAnchor="175" AnchorPane.topAnchor="200"/>
-    <Button text="会员注册" styleClass="blue-large-button" onAction="#vipRegistrationStage"
-            AnchorPane.leftAnchor="495" AnchorPane.topAnchor="200"/>
-    <Button text="账单查询" styleClass="blue-large-button" onAction="#billSelectStage"
-            AnchorPane.leftAnchor="175" AnchorPane.topAnchor="350"/>
-    <Button text="个人中心" styleClass="blue-large-button" onAction="#personalStage"
-            AnchorPane.leftAnchor="495" AnchorPane.topAnchor="350"/>
+    <Label styleClass="btnMenutext" text="智行超市前台管理" AnchorPane.leftAnchor="60" AnchorPane.topAnchor="10" />
+    <Button onAction="#showReceiptsStage" styleClass="blue-large-button" text="前台收银" AnchorPane.leftAnchor="175" AnchorPane.topAnchor="500" />
+    <Button onAction="#vipRegistrationStage" styleClass="blue-large-button" text="会员注册" AnchorPane.leftAnchor="495" AnchorPane.topAnchor="500" />
+    <Button onAction="#billSelectStage" styleClass="blue-large-button" text="账单查询" AnchorPane.leftAnchor="175" AnchorPane.topAnchor="650" />
+    <Button onAction="#personalStage" styleClass="blue-large-button" text="个人中心" AnchorPane.leftAnchor="495" AnchorPane.topAnchor="650" />
     <HBox AnchorPane.rightAnchor="200" AnchorPane.topAnchor="100">
         <ImageView>
-            <Image url="/img/logo.png"/>
+            <Image url="/img/logo.png" />
         </ImageView>
-        <Label text="xi" styleClass="black-word"/>
+        <Label styleClass="black-word" text="xi" />
     </HBox>
-    <Button text="退出" styleClass="blue-button-return"
-            AnchorPane.bottomAnchor="120" AnchorPane.rightAnchor="200"/>
 </AnchorPane>
